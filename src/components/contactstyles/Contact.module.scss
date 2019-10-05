@@ -1,0 +1,46 @@
+@import "../../../sass/variables.scss";
+.contact__section {
+  max-width: 60vw;
+  & .container {
+    margin: 2rem 0;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: auto;
+    align-content: center;
+    justify-items: center;
+    & h2 {
+      margin: 1rem;
+      text-transform: uppercase;
+      & span {
+        color: $brand-red;
+      }
+    }
+    & .container__columns {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: auto;
+      align-content: center;
+      gap: 4rem;
+      margin: 2rem 0;
+      & .column {
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: start;
+        padding: 1rem;
+      }
+      & a {
+        color: $brand-red;
+      }
+    }
+  }
+  & .contact__header {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+  .icon {
+    color: $brand-red;
+    font-size: 5rem;
+  }
+}

@@ -9,10 +9,11 @@ const Nav = () => {
           src={
             "https://res.cloudinary.com/snackmanproductions/image/upload/v1570237318/consurgointl/conlogo_yixikm.jpg"
           }
+          alt="Consurgo International Logo"
         />
       </figure>
       <h2>
-        Consurgo <span className={layoutStyles.span}>International Inc.</span>
+        Consurgo <span className={layoutStyles.span}>International, Inc.</span>
       </h2>
     </nav>
   )

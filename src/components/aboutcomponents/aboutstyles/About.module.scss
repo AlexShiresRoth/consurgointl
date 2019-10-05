@@ -1,0 +1,41 @@
+@import "../../../../sass/variables.scss";
+.about__section {
+  padding: 5rem;
+  max-width: 60vw;
+  & .container {
+    margin: 2rem 0;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: auto;
+    align-content: center;
+    & h3 {
+      margin: 1rem;
+      & span {
+        color: $brand-red;
+      }
+    }
+  }
+  & .container__columns {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    align-content: center;
+    gap: 4rem;
+    margin: 2rem 0;
+    & .column {
+      display: grid;
+      grid-template-rows: auto;
+      grid-template-columns: repeat(1, 1fr);
+
+      justify-items: center;
+      padding: 1rem;
+    }
+    & .column:nth-child(1) {
+      border-right: 1px solid #eee;
+    }
+  }
+  .icon {
+    color: $brand-red;
+    font-size: 7rem;
+  }
+}

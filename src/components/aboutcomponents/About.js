@@ -1,14 +1,14 @@
 import React from "react"
 import PropTypes from "prop-types"
-
+import SectionTwo from "./SectionTwo"
 import layoutStyles from "./aboutstyles/About.module.scss"
 const About = ({ aboutCopy }) => {
   return (
     <section className={layoutStyles.about__section}>
       <div className={layoutStyles.container}>
-        <h2>
-          Who <span>We</span> Are
-        </h2>
+        <h3>
+          ABOUT CONSURGO <span>INTERNATIONAL, INC.</span>
+        </h3>
         <hr></hr>
         <p>
           Created exclusively for export, Consurgo International is an
@@ -22,6 +22,7 @@ const About = ({ aboutCopy }) => {
           of industries.
         </p>
       </div>
+      <SectionTwo layoutStyles={layoutStyles} />
     </section>
   )
 }
