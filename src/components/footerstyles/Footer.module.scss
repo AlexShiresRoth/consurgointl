@@ -62,3 +62,71 @@
     font-size: 2rem;
   }
 }
+
+@media screen and (max-width: 600px) {
+  .footer {
+    background: #000c14;
+    min-height: 20vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    & .container {
+      height: 100%;
+      margin: 1rem 0;
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: auto;
+      align-content: center;
+      justify-items: center;
+      & p {
+        color: #22323f;
+        font-size: 1.2rem;
+        list-style: none;
+        font-family: "Noto Sans";
+      }
+      & .container__columns {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: auto;
+        align-content: center;
+        gap: 4rem;
+        margin: 1rem 0;
+        height: 100%;
+        & .column {
+          display: grid;
+          grid-template-rows: auto;
+          grid-template-columns: repeat(1, 1fr);
+          justify-items: start;
+          padding: 0.5rem;
+          & ul {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: auto;
+            & li {
+              color: #22323f;
+              font-size: 1.5rem;
+              list-style: none;
+              font-family: "Noto Sans";
+            }
+          }
+        }
+        & .column:nth-child(1) {
+          border-right: 0;
+        }
+        & .column:nth-child(2) {
+          border-bottom: 1px solid lighten(#000c14, 5%);
+        }
+        & a {
+          color: $brand-red;
+          font-size: 1.5rem;
+          text-decoration: none;
+          font-family: "Noto Sans";
+        }
+      }
+    }
+    .icon {
+      color: $brand-red;
+      font-size: 2rem;
+    }
+  }
+}

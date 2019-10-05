@@ -42,7 +42,24 @@ p {
   font-family: "Noto Sans"; }
 
 hr {
-  margin: 1rem;
+  margin: 1rem 0;
   height: 0px;
   border-top: 2px solid #7a2a2c;
   width: 15rem; }
+
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 3.5rem; }
+  h2 {
+    font-size: 2.5rem; }
+  h3 {
+    font-size: 2rem; }
+  h4 {
+    font-size: 1.5rem; }
+  p {
+    margin: 2rem 0.5rem;
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+    color: #666;
+    line-height: 1.5;
+    font-family: "Noto Sans"; } }

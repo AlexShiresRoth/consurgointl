@@ -8,15 +8,6 @@ const Footer = props => {
   return (
     <footer className={layoutStyles.footer}>
       <div className={layoutStyles.container}>
-        <p>
-          {" "}
-          Copyright
-          <IconContext.Provider value={{ className: `${layoutStyles.icon}` }}>
-            <FaCopyright />
-          </IconContext.Provider>{" "}
-          2019 CONSURGO INTERNATIONAL INC. - ALL RIGHTS RESERVED.
-        </p>
-
         <div className={layoutStyles.container__columns}>
           <div className={layoutStyles.column}>
             <a href="mailto:sales@consurgointl.com">sales@consurgointl.com </a>
@@ -31,6 +22,14 @@ const Footer = props => {
             </ul>
           </div>
         </div>
+        <p>
+          {" "}
+          Copyright
+          <IconContext.Provider value={{ className: `${layoutStyles.icon}` }}>
+            <FaCopyright />
+          </IconContext.Provider>{" "}
+          2019 CONSURGO INTERNATIONAL INC. - ALL RIGHTS RESERVED.
+        </p>
       </div>
     </footer>
   )

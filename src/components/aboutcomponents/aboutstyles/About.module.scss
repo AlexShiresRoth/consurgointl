@@ -9,7 +9,7 @@
     grid-template-rows: auto;
     align-content: center;
     & h3 {
-      margin: 1rem;
+      margin: 1rem 0;
       & span {
         color: $brand-red;
       }
@@ -37,5 +37,36 @@
   .icon {
     color: $brand-red;
     font-size: 7rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .about__section {
+    padding: 2rem;
+    max-width: 80vw;
+
+    & .container__columns {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: auto;
+      align-content: center;
+      gap: 4rem;
+      margin: 2rem 0;
+      & .column {
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+        padding: 1rem;
+      }
+      & .column:nth-child(1) {
+        border-right: 0;
+        border-bottom: 1px solid #eee;
+      }
+    }
+    .icon {
+      color: $brand-red;
+      font-size: 6rem;
+    }
   }
 }
