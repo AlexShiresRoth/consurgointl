@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Consurgo International Inc.`,
-    description: `Consurgo International is an independent exporter and global leader in the delivery of US manufactured product, both non-food and food related since 2009.`
+    description: `Consurgo International is an independent exporter and global leader in the delivery of US manufactured product, both non-food and food related since 2009.`,
     author: `@ASRproductions`,
   },
   plugins: [
