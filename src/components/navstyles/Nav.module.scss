@@ -1,0 +1,14 @@
+.main__nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-height: 7rem;
+  padding: 1rem;
+  box-shadow: 0 2px 2px darken(#fff, 20%);
+}
+
+.span {
+  color: $brand-red;
+}
