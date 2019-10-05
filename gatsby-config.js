@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `Consurgo International`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    title: `Consurgo International Inc.`,
+    description: `Consurgo International is an independent exporter and global leader in the delivery of US manufactured product, both non-food and food related since 2009.`
     author: `@ASRproductions`,
   },
   plugins: [
@@ -22,8 +22,8 @@ module.exports = {
         name: `gatsby-starter-default`,
         short_name: `starter`,
         start_url: `/`,
-        background_color: `#666`,
-        theme_color: `#666`,
+        background_color: `#7a2a2c`,
+        theme_color: `#7a2a2c`,
         display: `minimal-ui`,
         icon: `src/images/conlogo.jpg`, // This path is relative to the root of the site.
       },
