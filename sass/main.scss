@@ -22,6 +22,9 @@ h2 {
 h3 {
   font-size: 3rem;
 }
-
-$brand-red: #7a2a2c;
-$text-color: #666;
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  justify-items: center;
+}
