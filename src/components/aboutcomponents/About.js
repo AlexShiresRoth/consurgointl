@@ -1,8 +1,7 @@
 import React from "react"
 import PropTypes from "prop-types"
-import SectionTwo from "./SectionTwo"
 import layoutStyles from "./aboutstyles/About.module.scss"
-const About = ({ aboutCopy }) => {
+const About = () => {
   return (
     <section className={layoutStyles.about__section}>
       <div className={layoutStyles.container}>
@@ -22,7 +21,6 @@ const About = ({ aboutCopy }) => {
           of industries.
         </p>
       </div>
-      <SectionTwo layoutStyles={layoutStyles} />
     </section>
   )
 }

@@ -1,0 +1,133 @@
+@import "../../../../sass/variables.scss";
+.main__nav {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.nav__top {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 1rem;
+  box-shadow: 0 2px 2px darken(#fff, 20%);
+}
+
+.span {
+  color: $brand-red;
+}
+
+.logo {
+  max-height: 9rem;
+}
+.nav__bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  background: $brand-red;
+  width: 100%;
+  padding: 1rem;
+  transition: all 0.3s ease-in-out;
+  & h3 {
+    color: #fff;
+  }
+  &:hover {
+    background: lighten($brand-red, 5%);
+    cursor: pointer;
+  }
+}
+.icon {
+  font-size: 2rem;
+  color: #fff;
+  margin: 0 0.5rem;
+}
+
+@media screen and (max-width: 600px) {
+  .main__nav {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .nav__top {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 0.5rem;
+    box-shadow: 0 2px 2px darken(#fff, 30%);
+  }
+
+  .logo {
+    max-height: 5rem;
+    & img {
+      max-height: 5rem;
+    }
+  }
+  .nav__bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: $brand-red;
+    width: 100%;
+    padding: 1rem;
+    transition: all 0.3s ease-in-out;
+    & h3 {
+      font-family: "Noto Sans";
+      font-weight: 300;
+      color: #fff;
+    }
+    &:hover {
+      background: lighten($brand-red, 5%);
+      cursor: pointer;
+    }
+  }
+  .icon {
+    font-size: 2.5rem;
+    font-weight: 300;
+    color: #fff;
+    margin: 0 0.5rem;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+      color: lighten($brand-red, 15%);
+    }
+  }
+  .nav__list {
+    max-height: 100vh;
+    background: $brand-red;
+    transition: all 0.7s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    & li {
+      list-style: none;
+      margin: 1.5rem 0;
+      border-bottom: 1px solid transparent;
+      &:hover {
+        border-bottom: 1px solid #fff;
+      }
+      & a {
+        color: #fff;
+        font-size: 2rem;
+        text-decoration: none;
+        font-family: "Noto Sans";
+      }
+    }
+  }
+  .hide {
+    max-height: 0;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+    opacity: 0.5;
+    & li {
+      visibility: hidden;
+      transition: all 0.3s ease-in-out;
+      opacity: 0;
+    }
+  }
+}

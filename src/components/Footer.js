@@ -23,12 +23,10 @@ const Footer = props => {
           </div>
         </div>
         <p>
-          {" "}
-          Copyright
           <IconContext.Provider value={{ className: `${layoutStyles.icon}` }}>
             <FaCopyright />
           </IconContext.Provider>{" "}
-          2019 CONSURGO INTERNATIONAL INC. - ALL RIGHTS RESERVED.
+          Copyright 2019 CONSURGO INTERNATIONAL INC. - ALL RIGHTS RESERVED.
         </p>
       </div>
     </footer>
