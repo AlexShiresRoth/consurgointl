@@ -14,7 +14,7 @@
   grid-template-columns: repeat(3, 1fr);
   justify-items: center;
   gap: 2rem;
-  margin: 2rem 0;
+  margin: 6rem 0;
 }
 .container__column {
   display: grid;
@@ -35,6 +35,13 @@
   }
 }
 @media screen and (max-width: 600px) {
+  .container__columns {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    gap: 2rem;
+    margin: 4rem 0;
+  }
   .icon {
     font-size: 4rem;
     width: 9rem;
