@@ -1,17 +1,12 @@
 import React from "react"
 import PropTypes from "prop-types"
-import { IconContext } from "react-icons"
-import { FaEnvelopeOpen } from "react-icons/fa"
-import layoutStyles from "./contactstyles/Contact.module.scss"
-const Contact = props => {
+import layoutStyles from "./servicesstyles/ServicesPage.module.scss"
+const ServicesPage = props => {
   return (
     <section className={layoutStyles.contact__section}>
       <div className={layoutStyles.container}>
         <div className={layoutStyles.contact__header}>
-          <IconContext.Provider value={{ className: `${layoutStyles.icon}` }}>
-            <FaEnvelopeOpen />
-          </IconContext.Provider>
-          <h2>Contact Us</h2>
+          <h2>Products and Services</h2>
         </div>
         <hr></hr>
         <div className={layoutStyles.container__columns}>
@@ -72,6 +67,6 @@ const Contact = props => {
   )
 }
 
-Contact.propTypes = {}
+ServicesPage.propTypes = {}
 
-export default Contact
+export default ServicesPage

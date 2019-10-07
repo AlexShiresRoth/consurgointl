@@ -2,7 +2,7 @@
 
 .services {
   display: grid;
-  width: 100%;
+  max-width: 60vw;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
   & .container {
@@ -71,6 +71,7 @@
 
 @media screen and (max-width: 600px) {
   .services {
+    max-width: 90vw;
     & .container {
       padding: 2rem;
     }
@@ -90,7 +91,7 @@
     align-content: center;
     gap: 4rem;
     margin: 2rem 0;
-    width: 100%;
+    max-width: 100%;
     & .column {
       display: grid;
       grid-template-rows: auto;

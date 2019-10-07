@@ -1,0 +1,43 @@
+@import "../../../../sass/variables.scss";
+
+.icon {
+  font-size: 5rem;
+  width: 15rem;
+  height: 15rem;
+  padding: 2rem;
+  border-radius: 50%;
+  color: #fff;
+  background: $brand-red;
+}
+.container__columns {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  gap: 2rem;
+  margin: 2rem 0;
+}
+.container__column {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  gap: 2rem;
+  justify-items: center;
+  & a {
+    font-size: 2rem;
+    color: lighten($brand-dark, 20%);
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border-bottom: 1px solid transparent;
+    &:hover {
+      color: $brand-dark;
+      border-bottom: 1px solid $brand-dark;
+    }
+  }
+}
+@media screen and (max-width: 600px) {
+  .icon {
+    font-size: 4rem;
+    width: 9rem;
+    height: 9rem;
+  }
+}
