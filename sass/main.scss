@@ -80,4 +80,11 @@ hr {
     line-height: 1.5;
     font-family: "Noto Sans";
   }
+  .container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
