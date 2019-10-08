@@ -1,0 +1,104 @@
+@import "../../../../sass/variables.scss";
+.contact__section {
+  max-width: 60vw;
+  & .contact__form {
+    margin: 2rem 0;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: auto;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    padding: 2rem;
+    box-shadow: 0 3px 3px #eee;
+    width: 40vw;
+    & .form__column {
+      display: flex;
+      flex-direction: column;
+      margin: 1rem 0;
+
+      & label {
+        font-size: 1.5rem;
+        font-family: "Noto Sans";
+        color: $brand-red;
+        margin: 0.5rem 0;
+      }
+      & .form__row {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        & .icon__box {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          background: $brand-red;
+          font-size: 1.5rem;
+          height: 5rem;
+          width: 5rem;
+          padding: 1rem;
+          color: #fff;
+          border-top-left-radius: 5px;
+          border-bottom-left-radius: 5px;
+        }
+      }
+      & input {
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        border: 1px solid $brand-dark;
+        border-left: none;
+      }
+      & input,
+      textarea {
+        width: 100%;
+        padding: 1rem;
+        color: #666;
+        font-size: 1.5rem;
+        transition: all 0.3s ease;
+        &:hover {
+          border: 1px solid dodgerblue;
+        }
+      }
+      & textarea {
+        border-radius: 5px;
+        border: 1px solid $brand-dark;
+        font-size: 2rem;
+      }
+
+      & .submit__button {
+        padding: 1rem;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-weight: 300;
+        border-radius: 5px;
+        font-family: "Noto Sans";
+        background: lighten($brand-dark, 20%);
+        color: #fff;
+        border: 1px solid lighten($brand-dark, 10%);
+        transition: all 0.3s ease-in-out;
+        &:hover {
+          cursor: pointer;
+          box-shadow: 0 4px 4px lighten($brand-dark, 10%);
+          background: lighten($brand-dark, 25%);
+          border: 1px solid lighten($brand-dark, 20%);
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .contact__section {
+    max-width: 90vw;
+    & .contact__form {
+      margin: 2rem 0;
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: auto;
+      border: 1px solid #eee;
+      border-radius: 5px;
+      padding: 2rem;
+      box-shadow: 0 3px 3px #eee;
+      width: 90vw;
+    }
+  }
+}

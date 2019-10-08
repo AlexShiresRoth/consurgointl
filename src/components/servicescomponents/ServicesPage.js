@@ -5,10 +5,6 @@ const ServicesPage = props => {
   return (
     <section className={layoutStyles.contact__section}>
       <div className={layoutStyles.container}>
-        <div className={layoutStyles.contact__header}>
-          <h2>Products and Services</h2>
-        </div>
-        <hr></hr>
         <div className={layoutStyles.container__columns}>
           <div className={layoutStyles.column}>
             <h4>
@@ -27,6 +23,9 @@ const ServicesPage = props => {
               Control Systems, Refrigeration Parts, Automotive Parts, Industrial
               Machinery components, Wind Power Products, Turbines, Motors.
             </p>
+            <p>
+              <a href="tel:516-455-3185">Phone:(516)-455-3185</a>
+            </p>
           </div>
           <div className={layoutStyles.column}>
             <h4>
@@ -42,6 +41,9 @@ const ServicesPage = props => {
               Agricultural products, food ingredients, ready foods,
               non-alcoholic beverages, energy drinks and snacks from trusted
               brands.
+            </p>
+            <p>
+              <a href="tel:516-445-0719">Phone:516-455-0719</a>
             </p>
           </div>
         </div>

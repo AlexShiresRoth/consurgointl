@@ -6,9 +6,9 @@ import { Link } from "gatsby"
 const NavLinks = ({ layoutStyles, showMenu }) => {
   const navLinks = [
     { title: "Home", path: "/" },
-    { title: "About", path: "About" },
-    { title: "Services", path: "Services" },
-    { title: "Contact", path: "Contact" },
+    { title: "About", path: "/About" },
+    { title: "Services", path: "/Services" },
+    { title: "Contact", path: "/Contact" },
   ]
   const navListMap = navLinks.map((item, i) => {
     return (

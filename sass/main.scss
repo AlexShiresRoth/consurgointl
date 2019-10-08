@@ -34,9 +34,14 @@ h4 {
 }
 main {
   display: grid;
-  grid-template-columns: 1fr;
   grid-template-rows: auto;
-  justify-items: center;
+}
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 p {
   margin: 2rem 1rem;

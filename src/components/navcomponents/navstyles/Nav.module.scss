@@ -57,7 +57,8 @@
   align-items: center;
   & li {
     list-style: none;
-    margin: 1.5rem;
+    margin: 1.5rem 0;
+    padding: 0 1rem;
     border-bottom: 1px solid transparent;
     &:hover {
       border-bottom: 1px solid #fff;
@@ -66,8 +67,12 @@
       color: #fff;
       font-size: 2rem;
       text-decoration: none;
+      font-weight: 300;
       font-family: "Noto Sans";
     }
+  }
+  & li:not(:last-child) {
+    border-right: 1px solid darken($brand-red, 5%);
   }
 }
 .hide {
@@ -155,6 +160,9 @@
         text-decoration: none;
         font-family: "Noto Sans";
       }
+    }
+    & li:not(:last-child) {
+      border-right: none;
     }
   }
   .hide {

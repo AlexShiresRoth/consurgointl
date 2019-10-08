@@ -6,7 +6,7 @@ const About = () => {
     <section className={layoutStyles.about__section}>
       <div className={layoutStyles.container}>
         <h3>
-          ABOUT CONSURGO <span>INTERNATIONAL, INC.</span>
+          About Consurgo <span>International</span> Inc.
         </h3>
         <hr></hr>
         <p>

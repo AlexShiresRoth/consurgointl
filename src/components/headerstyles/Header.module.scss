@@ -1,15 +1,41 @@
 .header {
-  background: url("https://res.cloudinary.com/snackmanproductions/image/upload/v1570296503/consurgointl/ross-parmly-rf6ywHVkrlY-unsplash_olpoik.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   display: flex;
-  height: 60vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-height: 40vh;
+  min-height: 30vh;
   filter: grayscale(10%);
+  position: relative;
+
+  & h2 {
+    z-index: 1;
+    color: #fff;
+    font-size: 4rem;
+    font-family: "Oswald";
+    letter-spacing: 2px;
+  }
+  & .overlay {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    z-index: 0;
+  }
 }
 
 @media screen and (max-width: 600px) {
   .header {
-    height: 30vh;
+    min-height: 15vh;
+    & h2 {
+      z-index: 1;
+      color: #fff;
+      font-size: 2rem;
+      font-family: "Oswald";
+      letter-spacing: 2px;
+    }
   }
 }
