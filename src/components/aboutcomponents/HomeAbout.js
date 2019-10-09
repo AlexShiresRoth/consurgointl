@@ -1,10 +1,14 @@
 import React from "react"
 import PropTypes from "prop-types"
 import layoutStyles from "./aboutstyles/About.module.scss"
-const About = () => {
+const HomeAbout = () => {
   return (
     <section className={layoutStyles.about__section}>
       <div className={layoutStyles.container}>
+        <h3>
+          About Consurgo <span>International</span> Inc.
+        </h3>
+        <hr></hr>
         <p>
           Created exclusively for export, Consurgo International is an
           independent exporter and global leader in the delivery of US
@@ -21,11 +25,11 @@ const About = () => {
   )
 }
 
-About.propTypes = {
+HomeAbout.propTypes = {
   aboutCopy: PropTypes.string,
 }
-About.defaultProps = {
+HomeAbout.defaultProps = {
   aboutCopy: ``,
 }
 
-export default About
+export default HomeAbout

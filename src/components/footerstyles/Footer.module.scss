@@ -1,6 +1,6 @@
 @import "../../../sass/variables.scss";
 .footer {
-  background: #000c14;
+  background: $brand-dark;
   min-height: 20vh;
   display: flex;
   flex-direction: row;
@@ -15,7 +15,7 @@
     align-content: center;
     justify-items: center;
     & p {
-      color: #22323f;
+      color: lighten(#22323f, 12%);
       font-size: 1.5rem;
       list-style: none;
       font-family: "Noto Sans";
@@ -39,7 +39,7 @@
           grid-template-columns: 1fr;
           grid-template-rows: auto;
           & li {
-            color: #22323f;
+            color: lighten(#22323f, 12%);
             font-size: 2rem;
             list-style: none;
             font-family: "Noto Sans";
@@ -47,7 +47,7 @@
         }
       }
       & .column:nth-child(1) {
-        border-right: 1px solid lighten(#000c14, 5%);
+        border-right: 1px solid lighten($brand-dark, 5%);
       }
       & a {
         color: $brand-red;
@@ -65,7 +65,7 @@
 
 @media screen and (max-width: 600px) {
   .footer {
-    background: #000c14;
+    background: $brand-dark;
     min-height: 20vh;
     display: flex;
     flex-direction: row;
@@ -79,7 +79,7 @@
       align-content: center;
       justify-items: center;
       & p {
-        color: #22323f;
+        color: lighten(#22323f, 12%);
         font-size: 1.2rem;
         list-style: none;
         font-family: "Noto Sans";
@@ -103,7 +103,7 @@
             grid-template-columns: 1fr;
             grid-template-rows: auto;
             & li {
-              color: #22323f;
+              color: lighten(#22323f, 12%);
               font-size: 1.5rem;
               list-style: none;
               font-family: "Noto Sans";

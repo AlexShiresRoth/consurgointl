@@ -10,8 +10,25 @@ const Footer = props => {
       <div className={layoutStyles.container}>
         <div className={layoutStyles.container__columns}>
           <div className={layoutStyles.column}>
-            <a href="mailto:sales@consurgointl.com">sales@consurgointl.com </a>
-            <a href="tel:516-445-0719">(516)-445-0719</a>
+            <ul>
+              <li>
+                <a href="mailto:sales@consurgointl.com">
+                  sales@consurgointl.com{" "}
+                </a>
+              </li>
+              <li>
+                Sales:
+                <a href="tel:516-445-0719">(516)-445-0719</a>
+              </li>
+              <li>
+                Instruments:
+                <a href="tel:516-455-3185">Phone:(516)-455-3185</a>
+              </li>
+              <li>
+                Specialties:
+                <a href="tel:516-445-0719">Phone:516-455-0719</a>
+              </li>
+            </ul>
           </div>
           <div className={layoutStyles.column}>
             <ul>

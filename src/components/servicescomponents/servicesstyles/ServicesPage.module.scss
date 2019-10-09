@@ -43,6 +43,25 @@
     color: $brand-red;
     font-size: 5rem;
   }
+  .products__container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.3rem;
+    background: rgba(1, 25, 16, 0.2);
+    border-radius: 5px;
+    padding: 1rem;
+    & picture {
+      max-width: 30rem;
+      max-height: 20rem;
+      border-radius: 5px;
+    }
+    & .product__img {
+      border-radius: 5px;
+      max-width: 25rem;
+      height: 19rem;
+      object-fit: cover;
+    }
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -89,6 +108,29 @@
     .icon {
       color: $brand-red;
       font-size: 5rem;
+    }
+
+    .products__container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: auto;
+      align-content: center;
+      justify-items: center;
+      gap: 0.2rem;
+      background: rgba(1, 25, 16, 0.2);
+      border-radius: 5px;
+      padding: 0.2rem;
+      & picture {
+        max-width: 18rem;
+        max-height: 15rem;
+        border-radius: 5px;
+      }
+      & .product__img {
+        border-radius: 5px;
+        max-width: 18rem;
+        height: 15rem;
+        object-fit: cover;
+      }
     }
   }
 }

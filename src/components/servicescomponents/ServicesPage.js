@@ -1,7 +1,19 @@
 import React from "react"
+import { Link } from "gatsby"
 import PropTypes from "prop-types"
+import ProductsGallery from "../reusable/ProductsGallery"
 import layoutStyles from "./servicesstyles/ServicesPage.module.scss"
 const ServicesPage = props => {
+  const imgs = [
+    `https://res.cloudinary.com/snackmanproductions/image/upload/v1570571974/consurgointl/products/pic2_lucn47.png`,
+    `https://res.cloudinary.com/snackmanproductions/image/upload/v1570571805/consurgointl/products/pouring-a-soft-drink-in-a-glass-PTWWEHC-min_vfkm9u.jpg`,
+    `https://res.cloudinary.com/snackmanproductions/image/upload/v1570571799/consurgointl/products/1s6fn5NnHD2N8842GQC-_6Q_as0oo3.jpg`,
+    `https://res.cloudinary.com/snackmanproductions/image/upload/v1570571792/consurgointl/products/the-impact-of-sugar-tax_lktjjc.jpg`,
+    `https://res.cloudinary.com/snackmanproductions/image/upload/v1570571789/consurgointl/products/5b0098e071ffd_cb2p99.jpg`,
+    `https://res.cloudinary.com/snackmanproductions/image/upload/v1570571770/consurgointl/products/cxc_02_gwgkm7.jpg`,
+    `https://res.cloudinary.com/snackmanproductions/image/upload/v1570571766/consurgointl/products/car-sim-ft_htstte.jpg`,
+    `https://res.cloudinary.com/snackmanproductions/image/upload/v1570578824/consurgointl/products/h1_1_fiewbu.png`,
+  ]
   return (
     <section className={layoutStyles.contact__section}>
       <div className={layoutStyles.container}>
@@ -10,9 +22,7 @@ const ServicesPage = props => {
             <h4>
               CONTACT{" "}
               <span>
-                <a href="mailto:sales@consurgointl.com">
-                  CONSURGO INTERNATIONAL INSTRUMENTS
-                </a>
+                <Link to="/Contact">CONSURGO INTERNATIONAL INSTRUMENTS</Link>
               </span>{" "}
               for any of the below products and services:
             </h4>
@@ -31,9 +41,7 @@ const ServicesPage = props => {
             <h4>
               CONTACT{" "}
               <span>
-                <a href="mailto:sales@consurgointl.com">
-                  CONSURGO INTERNATIONAL SPECIALTIES
-                </a>
+                <Link to="/Contact">CONSURGO INTERNATIONAL SPECIALTIES</Link>
               </span>{" "}
               for any on the below products:
             </h4>
@@ -47,6 +55,7 @@ const ServicesPage = props => {
             </p>
           </div>
         </div>
+        <ProductsGallery layoutStyles={layoutStyles} imgs={imgs} />
         <div className={layoutStyles.container__columns}>
           <div className={layoutStyles.column}>
             <h4>USA BUYING OFFICE</h4>

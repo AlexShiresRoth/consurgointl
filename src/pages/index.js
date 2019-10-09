@@ -4,13 +4,12 @@ import "../style/main.css"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Header from "../components/header"
-import About from "../components/aboutcomponents/About"
+import HomeAbout from "../components/aboutcomponents/HomeAbout"
 import HomeServices from "../components/homecomponents/HomeServices"
 
 const IndexPage = () => {
   const pageData = {
-    img:
-      "https://res.cloudinary.com/snackmanproductions/image/upload/v1570296503/consurgointl/ross-parmly-rf6ywHVkrlY-unsplash_olpoik.jpg",
+    img: `https://res.cloudinary.com/snackmanproductions/image/upload/v1570580759/consurgointl/vidar-nordli-mathisen-y8TMoCzw87E-unsplash_esb5hq.jpg`,
     pageTitle: null,
   }
   return (
@@ -18,7 +17,7 @@ const IndexPage = () => {
       <SEO title="Consurgo International Inc." />
       <Header pageData={pageData} />
       <div className="container">
-        <About />
+        <HomeAbout />
         <HomeServices />
       </div>
     </Layout>
