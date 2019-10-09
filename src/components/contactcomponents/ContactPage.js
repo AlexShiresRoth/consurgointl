@@ -14,6 +14,7 @@ export default class ContactPage extends React.Component {
       sent: "",
       openModal: null,
     }
+    this.formSubmit = this.formSubmit.bind(this)
   }
   handleInputs = event => {
     if (event.target.value === "") {
@@ -54,8 +55,7 @@ export default class ContactPage extends React.Component {
           openModal: "show",
           response: res,
         })
-        alert(res)
-        console.log(this.state.response)
+        alert(res.data.msg)
       })
       .catch(err => {
         this.setState({
@@ -63,8 +63,7 @@ export default class ContactPage extends React.Component {
           openModal: "show",
           response: err.message,
         })
-        console.log("error", err.message)
-        alert(err).message
+        alert(err.message)
       })
   }
   render() {
@@ -83,6 +82,8 @@ export default class ContactPage extends React.Component {
                 type="text"
                 name="name"
                 placeholder="Name or Business"
+                value={this.state.name}
+                onChange={e => this.handleInputs(e)}
                 required
               ></input>
             </div>
@@ -99,6 +100,8 @@ export default class ContactPage extends React.Component {
                 type="email"
                 name="email"
                 placeholder="Please Enter Your Email"
+                value={this.state.email}
+                onChange={e => this.handleInputs(e)}
                 required
               ></input>
             </div>
@@ -110,6 +113,8 @@ export default class ContactPage extends React.Component {
               name="message"
               rows="10"
               placeholder="Message"
+              value={this.state.message}
+              onChange={e => this.handleInputs(e)}
               required
             ></textarea>
           </div>
