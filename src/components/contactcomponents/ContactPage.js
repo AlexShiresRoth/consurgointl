@@ -40,7 +40,7 @@ export default class ContactPage extends React.Component {
       url: `${corsAnywhere}https://asrserver.herokuapp.com/api/consurgointl/send-email?&email=${info.email}&name=${info.name}&phone=${info.phone}&message=${info.message}`,
       data: {
         headers: {
-          "Access-Control-Allow-Origin": "https://www.consurgointl.com",
+          "Access-Control-Allow-Origin": "https://consurgointl.com",
           "Content-Type": "application/x-www-form-urlencoded",
         },
       },
@@ -63,8 +63,8 @@ export default class ContactPage extends React.Component {
           openModal: "show",
           response: err.message,
         })
-        console.log("error", this.state.response)
-        alert(err)
+        console.log("error", err.message)
+        alert(err).message
       })
   }
   render() {
