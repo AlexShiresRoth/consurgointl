@@ -71,7 +71,7 @@
     flex-direction: row;
     justify-content: center;
     & .container {
-      height: 100%;
+      max-width: 80vw;
       margin: 1rem 0;
       display: grid;
       grid-template-columns: repeat(1, 1fr);
@@ -89,9 +89,9 @@
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: auto;
         align-content: center;
-        gap: 4rem;
+        gap: 2rem;
         margin: 1rem 0;
-        height: 100%;
+        width: 100%;
         & .column {
           display: grid;
           grid-template-rows: auto;
