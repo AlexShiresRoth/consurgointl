@@ -37,7 +37,7 @@ export default class ContactPage extends React.Component {
 
     return await axios({
       method: "POST",
-      url: `${corsAnywhere}https://asrserver.herokuapp.com/api/consurgo/send-email?&email=${info.email}&name=${info.name}&phone=${info.phone}&message=${info.message}`,
+      url: `${corsAnywhere}https://asrserver.herokuapp.com/api/consurgointl/send-email?&email=${info.email}&name=${info.name}&phone=${info.phone}&message=${info.message}`,
       data: {
         headers: {
           "Access-Control-Allow-Origin": "https://www.consurgointl.com",
