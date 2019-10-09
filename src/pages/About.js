@@ -8,7 +8,7 @@ import Header from "../components/header"
 const About = () => {
   const pageData = {
     img: `https://res.cloudinary.com/snackmanproductions/image/upload/v1570241543/consurgointl/tyler-casey-CkZF0-etxU8-unsplash_l7ukhz.jpg`,
-    pageTitle: "ABOUT CONSURGO INTERNATIONAL, INC.",
+    pageTitle: "About Consurgo International, Inc.",
   }
   return (
     <Layout>

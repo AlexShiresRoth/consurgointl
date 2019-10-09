@@ -26,7 +26,7 @@ const Footer = props => {
               </li>
               <li>
                 Specialties:
-                <a href="tel:516-445-0719">Phone:516-455-0719</a>
+                <a href="tel:516-445-0719">Phone:(516)-455-0719</a>
               </li>
             </ul>
           </div>

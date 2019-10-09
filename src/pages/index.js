@@ -9,7 +9,7 @@ import HomeServices from "../components/homecomponents/HomeServices"
 
 const IndexPage = () => {
   const pageData = {
-    img: `https://res.cloudinary.com/snackmanproductions/image/upload/v1570580759/consurgointl/vidar-nordli-mathisen-y8TMoCzw87E-unsplash_esb5hq.jpg`,
+    img: `https://res.cloudinary.com/snackmanproductions/image/upload/v1570582409/consurgointl/juliana-kozoski-IoQioGLrz3Y-unsplash_skkr95.jpg`,
     pageTitle: null,
   }
   return (

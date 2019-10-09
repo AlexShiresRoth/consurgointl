@@ -8,7 +8,7 @@ const ContactPage = () => {
     <section className={layoutStyles.contact__section}>
       <form className={layoutStyles.contact__form}>
         <div className={layoutStyles.form__column}>
-          <label for="name">Name or Business:</label>
+          <label htmlfor="name">Name or Business:</label>
           <div className={layoutStyles.form__row}>
             <IconContext.Provider
               value={{ className: `${layoutStyles.icon__box}` }}
@@ -23,7 +23,7 @@ const ContactPage = () => {
           </div>
         </div>
         <div className={layoutStyles.form__column}>
-          <label for="email">Email:</label>
+          <label htmlfor="email">Email:</label>
           <div className={layoutStyles.form__row}>
             <IconContext.Provider
               value={{ className: `${layoutStyles.icon__box}` }}
@@ -38,7 +38,7 @@ const ContactPage = () => {
           </div>
         </div>
         <div className={layoutStyles.form__column}>
-          <label for="message">Enter your message:</label>
+          <label htmlfor="message">Enter your message:</label>
           <textarea
             type="text"
             name="message"
