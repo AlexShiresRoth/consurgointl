@@ -2,6 +2,7 @@ import React from "react"
 import axios from "axios"
 import { IconContext } from "react-icons"
 import { FaEnvelopeOpen, FaAddressCard } from "react-icons/fa"
+import Modal from "./Modal"
 import layoutStyles from "./contactstyles/Contact.module.scss"
 
 export default class ContactPage extends React.Component {
@@ -11,10 +12,17 @@ export default class ContactPage extends React.Component {
       name: "",
       email: "",
       message: "",
-      sent: "",
-      openModal: null,
+      status: "",
+      openModal: "hidden",
     }
     this.formSubmit = this.formSubmit.bind(this)
+    this.modalClose = this.modalClose.bind(this)
+  }
+  //will close modal if shown
+  modalClose = () => {
+    if (this.state.openModal === "show") {
+      this.setState({ openModal: "hidden" })
+    }
   }
   handleInputs = event => {
     if (event.target.value === "") {
@@ -51,30 +59,38 @@ export default class ContactPage extends React.Component {
           name: "",
           email: "",
           message: "",
-          sent: "success",
+          status: "success",
           openModal: "show",
           response: res,
         })
-        alert(res.data.msg)
+        console.log(this.state.response)
       })
       .catch(err => {
         this.setState({
-          sent: "error",
+          status: "error",
           openModal: "show",
           response: err.message,
         })
-        alert(err.message)
+        console.log(this.state.response)
       })
   }
   render() {
     return (
       <section className={layoutStyles.contact__section}>
+        <Modal
+          status={this.state.status}
+          onClick={this.modalClose}
+          modalCase={this.state.openModal}
+          response={this.state.response}
+        />
         <form className={layoutStyles.contact__form} onSubmit={this.formSubmit}>
           <div className={layoutStyles.form__column}>
             <label htmlfor="name">Name or Business:</label>
             <div className={layoutStyles.form__row}>
               <IconContext.Provider
-                value={{ className: `${layoutStyles.icon__box}` }}
+                value={{
+                  className: `${layoutStyles.icon__box}`,
+                }}
               >
                 <FaAddressCard />
               </IconContext.Provider>
@@ -92,7 +108,9 @@ export default class ContactPage extends React.Component {
             <label htmlfor="email">Email:</label>
             <div className={layoutStyles.form__row}>
               <IconContext.Provider
-                value={{ className: `${layoutStyles.icon__box}` }}
+                value={{
+                  className: `${layoutStyles.icon__box}`,
+                }}
               >
                 <FaEnvelopeOpen />
               </IconContext.Provider>
